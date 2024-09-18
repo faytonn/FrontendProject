@@ -650,7 +650,7 @@ section{
   }
 
 
-  .loadMore button{
+  /* .loadMore button{
     padding: 10px 15px;
     margin: 10px;
   }
@@ -664,7 +664,7 @@ section{
       width: 100%;
       height: auto;
     }
-  }
+  } */
 
   footer {
     background-color: black;
