@@ -22,8 +22,9 @@ const getData = async () => {
     output.innerHTML = `
       <img src="${json.image.original}" alt="${json.name}" />
       <p>Name: ${json.name}</p>
-      <p></p>
+      <p>Genres: ${json.genres}</p>
       <p>Status: ${json.status}</p>
+      <p>Language: ${json.language}</p>
     `;
 
     console.log(json);
