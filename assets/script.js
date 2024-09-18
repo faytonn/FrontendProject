@@ -19,7 +19,7 @@ function redirectToRegister() {
       };
       
       const renderList = (data, page) => {
-        for (let i = (page-1)*10; i < page * 10; i++) {
+        for (let i = (page-1)*20; i < page * 20; i++) {
           const element = data[i];
           const list = document.querySelector(".list");
       
@@ -47,8 +47,8 @@ function redirectToRegister() {
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 4,
-        prevArrow : '<span class="next"><i style="font-size:20px;" class="fa-solid fa-chevron-right"></i></span>',
-        nextArrow: '<span class="prev"><i style="font-size:20px;" class="fa-solid fa-chevron-left"></i></span>',
+        prevArrow : '<span class="prev"><i style="font-size:20px;" class="fa-solid fa-chevron-left"></i></span>',
+        nextArrow: '<span class="next"><i style="font-size:20px;" class="fa-solid fa-chevron-right"></i></span>',
         responsive: [
           {
             breakpoint: 1024,

@@ -26,10 +26,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    axios.post("https://localhost:7049/swagger", {
-        email: email,
-        password: password
-    })
+    axios.post(`https://localhost:7049/api/Users/Login?email=${email}&password=${password}`)
     .then(response => {
         console.log("Login successful:", response.data);
         alert("Login successful");

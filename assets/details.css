@@ -118,11 +118,23 @@
 
 
 
+.output{
+    display: flex;
+    
+}
 
+.output img{
+    height:750px;
+    margin-left:75px;
+}
 
-
-
-
+.text{
+    margin-top: 100px;
+    max-width: 400px;
+    justify-content: center;
+    margin-left: 30px;
+    line-height: 1.5;
+}
 
 
 

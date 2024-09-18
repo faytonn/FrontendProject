@@ -20,12 +20,25 @@ const getData = async () => {
     const output = document.querySelector(".output");
 
     output.innerHTML = `
-      <img src="${json.image.original}" alt="${json.name}" />
-      <p>Name: ${json.name}</p>
-      <p>Genres: ${json.genres}</p>
-      <p>Status: ${json.status}</p>
-      <p>Language: ${json.language}</p>
-    `;
+
+    
+    <div class="image">
+    <img src="${json.image.original}" alt="${json.name}" />
+    </div>
+
+
+    <div class="text">
+    <p style="font-size:40px; font-family: Arial, Helvetica, sans-serif; font-weight:bold;">${json.name}</p>
+    <br>
+    <br>
+    <p>Genres: ${json.genres}</p>
+    <p>Status: ${json.status}</p>
+    <p>Language: ${json.language}</p>
+    <br>
+    <br>
+    <p>${json.summary}</p>
+    </div> `;
+   
 
     console.log(json);
   } catch (e) {
